@@ -421,6 +421,9 @@ fetch_cloudtrail_events() {
             echo ""
         fi
     fi
+    
+    # Fallback to CloudTrail API with progress tracking
+    echo -e "${BLUE}Step 2/3: Fetching BatchGetImage events...${NC}"
         
         # Fallback to CloudTrail API with progress tracking
         echo -e "${BLUE}Step 2/3: Fetching BatchGetImage events...${NC}"
